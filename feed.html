@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LITTLE ROOSTER 🐔</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <h1 class="navbar-brand title text-white">
+          LITTLE ROOSTER LIQUOR STORE FEEDBACK 🐔
+        </h1>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+
+      <!-- NAME INPUT -->
+      <label for="nameInput" class="form-label">Name</label>
+      <input type="text" id="nameInput" class="form-control">
+
+      <!-- STAR RATING HEADING -->
+      <label class="form-label mt-3">Rating</label>
+
+      <!-- STAR SHAPE -->
+      <div class="star"></div>
+
+      <!-- FEEDBACK TEXTAREA -->
+      <div class="mb-3 mt-3">
+        <label for="feedbackText" class="form-label">Feedback</label>
+        <textarea class="form-control" id="feedbackText" rows="3"></textarea>
+      </div>
+
+      <!-- CHARACTER COUNTER -->
+      <div id="charCount"></div>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="button" id="submitBtn" class="btn btn-success">
+        Submit Feedback
+      </button>
+
+      <!-- FEEDBACK DISPLAY SECTION -->
+      <h3 class="mt-4">Recent Feedback</h3>
+      <div id="feedbackList"></div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+      <div class="lastpart"></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
