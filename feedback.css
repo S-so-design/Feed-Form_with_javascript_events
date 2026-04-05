@@ -15,26 +15,4 @@ body {
 }
 
 /* STAR SHAPE (from Clippy) */
-.star {
-  width: 80px;
-  height: 80px;
-  background: white;
-  clip-path: polygon(
-    50% 0%,
-    63% 35%,
-    98% 38%,
-    69% 59%,
-    79% 95%,
-    50% 72%,
-    21% 95%,
-    31% 59%,
-    2% 38%,
-    37% 35%
-  );
-  border: 2px solid black;
-  transition: 0.2s;
-}
 
-.star:hover {
-  background: gold;
-}
