@@ -1,18 +1,47 @@
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.title {
-  color: #5C6AC4;
-  font-family: "Rubik Distressed", system-ui;
-  font-weight: 200;
+.title{
+color:#5C6AC4;
+font-family:"Rubik Distressed",system-ui;
+font-weight:200;
 }
 
-.container-fluid {
-  background-color: #e0b1cb;
+.container-fluid{
+background-color:#e0b1cb;
 }
 
-/* STAR SHAPE (from Clippy) */
+/* STAR RATING */
 
+.rating-css{
+direction:rtl;
+display:flex;
+justify-content:flex-start;
+}
+
+.rating-css input{
+display:none;
+}
+
+.rating-css label{
+font-size:35px;
+color:#ccc;
+cursor:pointer;
+transition:0.2s;
+}
+
+.rating-css label:hover,
+.rating-css label:hover ~ label{
+color:gold;
+}
+
+.rating-css input:checked ~ label{
+color:gold;
+}
+.rating-css{
+  display: flex;
+  justify-content: left;
+}
