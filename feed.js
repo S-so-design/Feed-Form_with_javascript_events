@@ -1,18 +1,51 @@
-const name = document.querySelector("#nameInput")
-const feedback = document.querySelector("#feedbackText")
-const submit = document.querySelector("#submitBtn")
-const recentFeedback = document.querySelector("#feedbackList")
+const name = document.querySelector("#nameInput");
+const feedback = document.querySelector("#feedbackText");
+const submit = document.querySelector("#submitBtn");
+const recentFeedback = document.querySelector("#feedbackList");
 
+// Submit feedback
 submit.addEventListener("click", function(e) {
-  e.preventDefault()
-
-  const enter_name = name.value.trim().toUpperCase()
-  const enter_feedback = feedback.value.trim()
-
-  if (enter_name !== "" && enter_feedback !== "") {
-    recentFeedback.innerHTML += "<li>" + enter_name + "<br>" + enter_feedback + "</li>"
+  e.preventDefault();
+  const enter_name = name.value.trim().toUpperCase();
+  const enter_feedback = feedback.value.trim();
+  const rating = document.querySelector('input[name="rating"]:checked');
+  const starCount = rating ? rating.id.replace("rating","") : 0;
+  let stars = "";
+  for(let i=0; i<starCount; i++){
+    stars += "⭐";
   }
 
-  name.value = ""
-  feedback.value = ""
-})
+  if (enter_name !== "" && enter_feedback !== "") {
+    recentFeedback.innerHTML += `
+      <li><i class="fa-solid fa-user"></i>
+      <strong>${enter_name}</strong><br>
+      ${stars}<br>
+      ${enter_feedback}
+      </li>
+    `;
+  }
+
+  name.value = "";
+  feedback.value = "";
+});
+
+// Mouse effects
+submit.addEventListener("mousedown", function(){
+  submit.style.transform = "scale(0.95)";
+});
+submit.addEventListener("mouseup", function(){
+  submit.style.transform = "scale(1)";
+});
+submit.addEventListener("mouseenter", function(){
+  submit.style.backgroundColor = "blue";
+});
+submit.addEventListener("mouseleave", function(){
+  submit.style.backgroundColor = "#198754"; // Bootstrap success green
+});
+
+// Keyboard: submit on Enter anywhere
+document.addEventListener("keydown", function(event){
+  if(event.key === "Enter"){
+    submit.click();
+  }
+});
