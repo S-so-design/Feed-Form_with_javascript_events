@@ -1,84 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>LITTLE ROOSTER 🐔</title>
+    <title>LITTLE ROOSTER 🐔</title>
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="feedback.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="feedback.css">
 
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-<div class="container-fluid">
-<h1 class="navbar-brand title text-white">
-LITTLE ROOSTER LIQUOR STORE FEEDBACK 🐔
-</h1>
-</div>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <h1 class="navbar-brand title text-white">
+                LITTLE ROOSTER LIQUOR STORE FEEDBACK 🐔
+            </h1>
+        </div>
+    </nav>
 
-<div class="container mt-4">
+    <div class="container mt-4">
 
-<!-- NAME -->
-<label for="nameInput" class="form-label">Name</label>
-<input type="text" id="nameInput" class="form-control">
+        <!-- NAME -->
+        <label for="nameInput" class="form-label">Name</label>
+        <input type="text" id="nameInput" class="form-control">
 
-<!-- RATING -->
-<label class="form-label mt-3">Rating</label>
+        <!-- RATING -->
+        <label class="form-label mt-3">Rating</label>
 
-<div class="rating-css">
+        <div class="rating-css">
 
-<input type="radio" name="rating" id="rating5">
-<label for="rating5" class="fa fa-star"></label>
+            <input type="radio" name="rating" id="rating5">
+            <label for="rating5" class="fa fa-star"></label>
 
-<input type="radio" name="rating" id="rating4">
-<label for="rating4" class="fa fa-star"></label>
+            <input type="radio" name="rating" id="rating4">
+            <label for="rating4" class="fa fa-star"></label>
 
-<input type="radio" name="rating" id="rating3">
-<label for="rating3" class="fa fa-star"></label>
+            <input type="radio" name="rating" id="rating3">
+            <label for="rating3" class="fa fa-star"></label>
 
-<input type="radio" name="rating" id="rating2">
-<label for="rating2" class="fa fa-star"></label>
+            <input type="radio" name="rating" id="rating2">
+            <label for="rating2" class="fa fa-star"></label>
 
-<input type="radio" name="rating" id="rating5">
-<label for="rating2" class="fa fa-star"></label>
+            <input type="radio" name="rating" id="rating5">
+            <label for="rating2" class="fa fa-star"></label>
 
-</div>
+        </div>
 
-<!-- FEEDBACK -->
-<div class="mb-3 mt-3">
-<label for="feedbackText" class="form-label">Feedback</label>
-<textarea class="form-control" id="feedbackText" rows="3"></textarea>
-</div>
+        <!-- FEEDBACK -->
+        <div class="mb-3 mt-3">
+            <label for="feedbackText" class="form-label">Feedback</label>
+            <textarea class="form-control" id="feedbackText" rows="3"></textarea>
+        </div>
 
-<div id="charCount"></div>
+        <div id="charCount"></div>
 
-<button id="submitBtn" class="btn btn-success">
-Submit Feedback
-</button>
+        <button id="submitBtn" class="btn btn-success">
+            Submit Feedback
+        </button>
 
-<h3 class="mt-4">Recent Feedback</h3>
-<ul id="feedbackList"></ul>
+        <h3 class="mt-4">Recent Feedback</h3>
+        <ul id="feedbackList"></ul>
 
-</div>
+    </div>
 
-<footer class="mt-5">
-<div class="lastpart"></div>
-</footer>
+    <footer class="mt-5">
+        <div class="lastpart"></div>
+    </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="feed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="feed.js"></script>
 </body>
+
 </html>
